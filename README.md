@@ -1,4 +1,5 @@
 # 嵐印語灰箱化視覺設計概要稿（技術導向版）
+> 📘 Full technical spec: see **[SAIIP Grey-Box Visualization Framework v2.0](README_EN.md)**.
 
 ## 1. 研究背景與問題定義
 在大型語言模型（LLM）與詩語生成系統中，模型決策過程往往被視為「黑箱」。
