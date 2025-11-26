@@ -1,215 +1,195 @@
-# 🌈 SAIIP Grey-Box Visualization Framework v2.0  
-*A six-layer conceptual interpretability framework for semantic–rhythmic analysis in LLMs.*
+---
+pretty_name: "Grey-Box Visualization Framework v2.0"
+license: mit
+language:
+  - en
+tags:
+  - interpretability
+  - visualization
+  - grey-box
+  - explainable-ai
+  - semantic-analysis
+  - decision-flow
+size_categories:
+  - n/a
+task_categories:
+  - other
+---
+
+# 🌈 Grey-Box Visualization Framework v2.0  
+### *A general six-layer interpretability framework for LLM decision-flow & structured semantic analysis*  
+*(Inspired by SAIIP, but fully domain-agnostic)*
 
 ---
 
-## 0. Executive Summary
+## 🔹 Summary
 
-SAIIP (嵐印語) is a poetic language system that combines semantics, rhythm, structure, and symbolic constraints.  
-The **Grey-Box Visualization Framework** aims to provide a conceptual way to visualize how language models process:
+**The Grey-Box Visualization Framework v2.0** is a universal, six-layer conceptual interpretability model designed to visualize how **any large language model (LLM)** processes:
 
 - semantic structure  
 - attention distribution  
-- flow of meaning  
-- moral / decision patterns  
+- reasoning pathways  
+- importance weighting  
+- flow acceleration  
+- decision-altering interventions  
 
-Version **v2.0** upgrades the original 3-layer framework to a **six-layer model** by adding:
+Although the framework was originally inspired by analyzing the poetic language system **SAIIP（嵐印語）**,  
+its six-layer design is **fully general-purpose** and applicable to:
 
-1. **Heatmap Weight Layer**  
-2. **Semantic Flow Velocity**  
-3. **Action Intervention Ring**
+- moral reasoning (e.g., the Trolley Problem)  
+- LLM internal decision tendencies  
+- explainability education  
+- visualization research  
+- linguistic / structural analysis  
+- conceptual illustration tools  
 
-These layers allow us to visualize not only *what* the model attends to, but also *how fast* meaning shifts and *where* interventions can change outcomes (e.g., in the trolley problem).
-
----
-
-## 1. Purpose & Scope
-
-**Purpose**
-
-- Enhance **observability** of internal model behavior  
-- Provide a structured basis for **explainability (XAI)**  
-- Support **semantic–rhythmic alignment** analysis for SAIIP  
-- Visualize **action-based interventions** in decision-like scenarios  
-
-**Scope**
-
-- Conceptual only — not an executable tool or live debugging system  
-- Applicable to language models and poetic / structured language systems  
-- Designed for research, education, and documentation
-
-> This framework is a *visual abstraction* of how models behave, not a guarantee of actual neuron-level behavior.
+> **No knowledge of SAIIP is required to use or understand this framework.**  
+> SAIIP is included only as an optional example of an extended application.
 
 ---
 
-## 2. Conceptual Assumptions
-
-The v2.0 framework assumes:
-
-1. Semantics can be abstracted as **nodes**.  
-2. Attention can be visualized as **edges / weights**.  
-3. Meaning flows through sequences as **directed paths**.  
-4. Moral or structural importance can be visualized as **heat**.  
-5. The *speed* of reasoning can be represented as **flow velocity**.  
-6. Human or model actions can be treated as **intervention points** that alter flows.
-
-These assumptions match common practices in XAI while staying compatible with SAIIP’s semantic–rhythmic nature.
+## 📘 Table of Contents
+1. [Executive Summary](#executive-summary)  
+2. [Purpose & Scope](#purpose--scope)  
+3. [Conceptual Assumptions](#conceptual-assumptions)  
+4. [Six-Layer Grey-Box Model](#six-layer-grey-box-model-v20)  
+5. [XAI Mapping](#mapping-to-xai-concepts)  
+6. [Extended Application Example (Optional)](#extended-application-semanticrhythmic-alignment-example-optional)  
+7. [Example: Trolley Problem](#example-trolley-problem)  
+8. [Limitations](#limitations)  
+9. [Conclusion](#conclusion)
 
 ---
 
-## 3. Six-Layer Grey-Box Model (v2.0)
+# Executive Summary
 
-### Layer 1 — Semantic Nodes
+The **Grey-Box Visualization Framework v2.0** introduces a structured and intuitive system for interpreting LLM behavior through a six-layer conceptual model:
 
-- Tokens, symbols, or SAIIP units are represented as **nodes**.  
-- Nodes can be grouped by semantic similarity or rhythmic category.  
-- XAI analogy: **embeddings / concept clustering**.
+1. Semantic Nodes  
+2. Attention Mapping  
+3. Semantic Flow  
+4. Heatmap Weight Layer  
+5. Semantic Flow Velocity  
+6. Action Intervention Ring  
 
-> Role: Provide the static “map” of what exists in the sequence.
+These layers collectively show **how models shift focus, propagate meaning, assign implicit importance, build decisions, and react to interventions**.
 
----
-
-### Layer 2 — Attention Mapping
-
-- Edges between nodes represent attention weights.  
-- Line thickness / opacity encodes **how strongly one node attends to another**.  
-- XAI analogy: **attention visualizations**, multi-head attention patterns.
-
-> Role: Show where the model is *focusing* given the current context.
+While inspired by observations from SAIIP（嵐印語）, the framework is **fully general** and suited for any reasoning or generative model.
 
 ---
 
-### Layer 3 — Semantic Flow
+# Purpose & Scope
 
-- Directed arrows trace how meaning **moves** through the graph.  
-- Shows token-to-token influence and contextual propagation.  
-- XAI analogy: **saliency maps, influence paths, token transition maps**.
+## ✔ Primary Purposes
+- Provide clear, visual interpretability for LLM reasoning  
+- Model semantic structure and decision flow  
+- Represent weighted or moral-like tendencies  
+- Highlight where actions or inputs can change outcomes  
+- Serve as a conceptual analysis tool for research & education  
 
-> Role: Expose the *direction* of reasoning, not just the focus.
-
----
-
-### Layer 4 — Heatmap Weight Layer (NEW in v2.0)
-
-- Nodes or regions are shaded by **importance / moral weight / structural burden**.  
-- Darker or larger nodes represent higher influence or cost.
-
-**Trolley example**
-
-- The group of five people appears as a **high-heat region** (greater moral cost).  
-- The single person is **lower heat** (lower aggregate cost).  
-- The agent who can intervene also has elevated heat (high-impact decision).
-
-XAI analogy: **feature importance, global saliency, importance heatmaps**.
-
-> Role: Make “where it really matters” visually obvious.
+## ✔ Optional Purposes  
+*(Not required to use the framework)*  
+- Analyze structured or rhythm-based systems such as SAIIP  
+- Study semantic–rhythmic alignment  
+- Extend to poetic or symbolic generation tasks  
 
 ---
 
-### Layer 5 — Semantic Flow Velocity (NEW in v2.0)
+# Conceptual Assumptions
 
-- Flow lines vary in **thickness, curvature, or density** to encode *how quickly* meaning shifts.  
-- High-velocity segments indicate **rapid decision points** or strong semantic jumps.
+The framework assumes general properties of language models:
 
-**Trolley example**
+1. Semantics can be abstracted as **nodes**  
+2. Attention can be visualized as **weighted edges**  
+3. Meaning transitions appear as **directed flows**  
+4. Importance or burden appears as **heat levels**  
+5. Reasoning intensity can appear as **flow velocity**  
+6. Human or model actions can function as **intervention points**
 
-- The semantic flow from *switch* → *five people* is high-velocity (fast commitment).  
-- The flow toward the single person is lower velocity (less committed reasoning).
-
-XAI analogy: **gradient dynamics, temporal saliency, reasoning momentum**.
-
-> Role: Show *where reasoning accelerates* or “locks in” a decision.
-
----
-
-### Layer 6 — Action Intervention Ring (NEW in v2.0)
-
-- Special visual layer for **agents** (humans or systems) that can change outcomes.  
-- Represented as a **ring or halo** around an action node (e.g., the person running to the switch).  
-- The ring’s intensity reflects how strongly the intervention can redirect flows.
-
-**Trolley example**
-
-- The agent near the switch is encircled by an intervention ring.  
-- The ring connects back to the main flows toward “one person” vs “five people”.  
-
-XAI analogy: **causal intervention, do-operator viewpoint, counterfactual nodes**.
-
-> Role: Highlight *where actions can alter the causal structure* of the scenario.
+These assumptions are universal and do not depend on any specific language system.
 
 ---
 
-## 4. Mapping to XAI Concepts
+# Six-Layer Grey-Box Model (v2.0)
 
-| SAIIP Grey-Box Layer       | XAI Equivalent                         | Focus                          |
-|----------------------------|----------------------------------------|--------------------------------|
-| Semantic Nodes             | Embeddings, concept clusters           | What exists                    |
-| Attention Mapping          | Attention visualizations               | Where the model looks          |
-| Semantic Flow              | Saliency / influence paths             | How information moves          |
-| Heatmap Weight             | Feature importance / global saliency   | What truly matters             |
-| Flow Velocity              | Gradient dynamics / reasoning speed    | Where reasoning accelerates    |
-| Action Intervention Ring   | Causal intervention / counterfactuals  | Where actions change outcomes  |
+## **Layer 1 — Semantic Nodes**  
+Concepts, tokens, or contextual units shown as nodes.
 
----
+## **Layer 2 — Attention Mapping**  
+Weighted lines representing attention relationships.
 
-## 5. Semantic–Rhythmic Alignment in SAIIP
+## **Layer 3 — Semantic Flow**  
+Arrows indicating meaning propagation or reasoning direction.
 
-SAIIP is not purely semantic; it is also **rhythmic and poetic**.  
-The six-layer model allows joint visualization of:
+## **Layer 4 — Heatmap Weight Layer (NEW)**  
+Darker or larger nodes = higher importance/moral/structural weight.
 
-- **Semantic weight** (meaning)  
-- **Rhythmic structure** (cadence, meter, line breaks)  
-- **Interventions** (where rhythm or action alters meaning)
+## **Layer 5 — Semantic Flow Velocity (NEW)**  
+Thicker or sharper flow lines = faster reasoning acceleration.
 
-Examples:
-
-- Heatmap weight can correspond to **rhythmic emphasis** (stressed beats).  
-- Flow velocity can highlight **hurried or slowed** segments in a poetic line.  
-- Intervention rings can represent **editorial or performer decisions** that change delivery.
-
-> In SAIIP, meaning and rhythm are co-equal citizens. v2.0 makes both visible in one framework.
+## **Layer 6 — Action Intervention Ring (NEW)**  
+Halo around agents or nodes capable of altering the decision path.
 
 ---
 
-## 6. Example: Trolley Problem under SAIIP Grey-Box v2.0
+# Mapping to XAI Concepts
 
-When applied to the trolley problem:
-
-- Semantic nodes represent: trolley, track, switch, one person, five people, agent.  
-- Attention mapping shows how the model connects the trolley and tracks to each group.  
-- Semantic flow shows the path from *situation description* → *possible outcomes*.  
-- Heatmap weight highlights the **five-person outcome** as morally “heavier”.  
-- Flow velocity increases along the path toward “saving more lives”.  
-- The action intervention ring surrounds the **agent at the switch**, marking the point where a choice can redirect the flow.
-
-This does **not** say the model is “truly moral”.  
-It only provides a structured, visual way to see how its internal preferences + training data shape its *tendencies* in such scenarios.
+| Framework Layer | XAI Equivalent |
+|-----------------|----------------|
+| Semantic Nodes | Embeddings / Concept clusters |
+| Attention Mapping | Attention visualization |
+| Semantic Flow | Saliency / Influence paths |
+| Heatmap Weight | Feature importance |
+| Flow Velocity | Gradient dynamics |
+| Intervention Ring | Causal analysis / Counterfactual reasoning |
 
 ---
 
-## 7. Limitations
+# Extended Application: Semantic–Rhythmic Alignment Example (Optional)
 
-- The framework is **conceptual**, not a guaranteed representation of actual internal weights.  
-- It does not provide live model introspection or gradient access.  
-- It should not be used as evidence of genuine moral reasoning.  
-- It is intended for **illustration, education, and research discussion**.
+This section demonstrates how the framework **can also** analyze structured systems where rhythm or cadence interacts with meaning.
 
-> Think of this as a “map of how we choose to read the model”, not a microscope.
+SAIIP（嵐印語）is referenced **only as an example**, showing how rhythm-based constraints can be layered into the six-layer visualization.
+
+Users do **not** need to understand SAIIP to use the framework.
 
 ---
 
-## 8. Conclusion
+# Example: Trolley Problem
 
-The **SAIIP Grey-Box Visualization Framework v2.0** extends the original 3-layer design into a richer, six-layer interpretability structure that:
+The six-layer framework makes the Trolley Problem visually interpretable:
 
-- Separates **semantics, attention, flow, weight, velocity, and action**  
-- Supports **semantic–rhythmic analysis** unique to SAIIP  
-- Makes **decision-like behaviors** (such as the trolley problem) visually inspectable  
-- Provides a reusable template for other conceptual explainability diagrams
+- Semantic nodes represent trolley, people, tracks, switch  
+- Attention mapping highlights focus points  
+- Semantic flow shows branching decisions  
+- Heatmap weight visualizes moral pressure  
+- Flow velocity indicates rapid commitment  
+- Intervention ring marks the agent capable of redirecting the path  
 
-It is designed to be:
+This provides a conceptual view of how models might represent decision-like reasoning.
 
-- Simple enough for teaching,  
-- Structured enough for research notes, and  
-- Flexible enough to be remixed into new visualizations or case studies.
+---
+
+# Limitations
+
+- Conceptual; does not reflect real neuron weights  
+- Not a diagnostic or gradient-level tool  
+- Heat and velocity layers are illustrative abstractions  
+- Action intervention is symbolic, not a true causal operator  
+
+---
+
+# Conclusion
+
+The **Grey-Box Visualization Framework v2.0** is a **universal, domain-independent interpretability framework** suitable for:
+
+- reasoning analysis  
+- visualization design  
+- education  
+- structured explanations of LLM behavior  
+- moral or multi-branch decision representation  
+
+It is inspired by, but **not dependent on**, SAIIP（嵐印語）.
+
+You may use this framework with **any** language, dataset, or AI system.
 
