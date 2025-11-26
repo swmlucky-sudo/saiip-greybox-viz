@@ -44,6 +44,26 @@ task_categories:
 - 技術展示及概念圖設計  
 
 > **你不需要了解 SAIIP，就能使用本框架。**
+## 🌈 Grey-Box Visualization v2 — Diagram Suite
+
+### **1. Grey-Box Framework Overview (v2)**
+The six-layer interpretability structure used across all examples.
+
+![Grey-Box Framework Overview](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/greybox_v2_overview.png)
+
+---
+
+### **2. Trolley Problem – Grey-Box Visualization (v2)**
+A high-contrast, research-style rendering of decision-flow and semantic attention.
+
+![Trolley Problem v2](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/trolley_v2_example.png)
+
+---
+
+### **3. Semantic vs Attention vs Action – Three-Pane Visualization (v2)**
+Three aligned interpretations of the same decision scenario.
+
+![Three-Pane Semantic-Attention-Action](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/threepane_semantic_attention_action.png)
 
 ---
 
