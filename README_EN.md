@@ -45,6 +45,26 @@ its six-layer design is **fully general-purpose** and applicable to:
 
 > **No knowledge of SAIIP is required to use or understand this framework.**  
 > SAIIP is included only as an optional example of an extended application.
+## 🌈 Grey-Box Visualization v2 — Diagram Suite
+
+### **1. Grey-Box Framework Overview (v2)**
+The six-layer interpretability structure used across all examples.
+
+![Grey-Box Framework Overview](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/greybox_v2_overview.png)
+
+---
+
+### **2. Trolley Problem – Grey-Box Visualization (v2)**
+A high-contrast, research-style rendering of decision-flow and semantic attention.
+
+![Trolley Problem v2](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/trolley_v2_example.png)
+
+---
+
+### **3. Semantic vs Attention vs Action – Three-Pane Visualization (v2)**
+Three aligned interpretations of the same decision scenario.
+
+![Three-Pane Semantic-Attention-Action](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/threepane_semantic_attention_action.png)
 
 ---
 
