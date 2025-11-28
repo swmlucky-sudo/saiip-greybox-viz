@@ -1,125 +1,167 @@
-# 🌈 Grey-Box Visualization Framework v2.0  
-_A universal six-layer conceptual interpretability framework for LLM reasoning visualization._
+---
+title: Grey-Box Visualization Framework v2.0
+---
 
-> Inspired by SAIIP, but fully model-agnostic and language-agnostic.
+# 🌈 Grey-Box Visualization Framework v2.0
+
+*A universal six-layer conceptual interpretability framework for LLM reasoning visualization.*  
+Inspired by SAIIP, but fully model-agnostic and language-agnostic.
 
 ---
 
-## 1. What is this?
+## 🔍 Quick Overview
 
-The **Grey-Box Visualization Framework v2.0** is a six-layer conceptual
-interpretability model designed to make large language model (LLM) reasoning:
+The **Grey-Box Visualization Framework v2.0** is a conceptual tool for:
 
-- more **visible**  
-- more **structured**  
-- more **teachable**  
-- more **reusable** as a visualization template  
+- making large language model (LLM) reasoning **visible and structured**
+- explaining **how** attention, semantics, and decisions interact
+- providing **research-grade diagrams** for papers, talks, and teaching
+- serving as a **reusable template** for new interpretability visualizations
 
-It focuses on _how_ models:
+It is **not** a low-level introspection or debugging toolkit.  
+Instead, it is a **human-facing, grey-box abstraction** of model behavior.
 
-- group and relate concepts (semantics)  
-- distribute focus (attention)  
-- move along reasoning paths (flow)  
-- accumulate pressure or importance (heat)  
-- accelerate decisions (velocity)  
-- expose intervention points (actions)  
-
-This project is **not** a debugging toolkit or gradient probe.  
-It is a **human-facing conceptual visualization framework**.
-
-Repo: [GitHub – swmlucky-sudo/saiip-greybox-viz](https://github.com/swmlucky-sudo/saiip-greybox-viz)  
-Dataset: (optional) Hugging Face card if you want to link it later.
+> 💡 You do **not** need to know SAIIP to use this framework.  
+> SAIIP is only an inspiration source, not a dependency.
 
 ---
 
-## 2. The Six-Layer Grey-Box Architecture
+## 🧭 Project Links
 
-The framework defines six layers:
+- 📦 GitHub Repository:  
+  [swmlucky-sudo/saiip-greybox-viz](https://github.com/swmlucky-sudo/saiip-greybox-viz)
 
-1. **Semantic Nodes** – concepts, tokens, contextual units  
-2. **Attention Mapping** – weighted focus between nodes  
-3. **Semantic Flow** – directional movement of meaning / reasoning  
-4. **Heatmap Weight Layer** – importance / moral or structural weight  
-5. **Semantic Flow Velocity** – reasoning acceleration or momentum  
-6. **Action Intervention Ring** – where actions can change the outcome  
+- 📄 English README:  
+  [README.md](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/README.md)
 
-Together, these form a high-level “grey-box” view of model behavior.
+- 📄 中文說明：  
+  [README_CN.md](https://github.com/swmlucky-sudo/saiip-greybox-viz/blob/main/README_CN.md)
 
 ---
 
-## 3. Visual Overview (v2 Diagrams)
+## 🏗 The Six-Layer Grey-Box Architecture (v2)
 
-### 3.1 Grey-Box Framework Overview (v2)
+The framework organizes model behavior into six conceptual layers:
 
-A global overview of the six-layer structure used in this framework.
+1. **Semantic Nodes**  
+   - tokens, entities, or conceptual units  
+   - grouped into clusters based on meaning
 
-![Grey-Box Overview](../greybox_v2_overview.png)
+2. **Attention Mapping**  
+   - weighted links between nodes  
+   - shows *where the model is looking*
+
+3. **Semantic Flow**  
+   - directional arrows over time  
+   - illustrates how reasoning moves from one region to another
+
+4. **Heatmap Weight Layer**  
+   - visual “heat” representing importance / cost / moral weight  
+   - darker or larger regions = stronger influence
+
+5. **Semantic Flow Velocity**  
+   - thickness / curvature of flows  
+   - how quickly the model commits to an idea or path
+
+6. **Action Intervention Ring**  
+   - explicit nodes where an action can **change the outcome**  
+   - human or model decisions that branch the path
+
+These layers can be combined or visualized separately depending on the use case.
 
 ---
 
-### 3.2 Trolley Problem – Grey-Box Visualization (v2)
+## 📊 v2 Diagram Gallery
 
-A research-style rendering of the Trolley Problem, with:
+### 1️⃣ Framework Overview – Six-Layer Grey-Box
 
-- semantic grouping of agents and outcomes  
-- heatmap weighting of different branches  
-- intervention node highlighting the agent at the switch  
+A high-level diagram of the six-layer architecture used across scenarios.
+
+![Grey-Box Framework Overview](../greybox_v2_overview.png)
+
+---
+
+### 2️⃣ Trolley Problem – Grey-Box Visualization (v2)
+
+A research-style visualization of the classic Trolley Problem:
+
+- left/right branches show alternative outcomes  
+- attention and flow focus highlight model preference  
+- intervention ring marks the agent at the lever/switch  
+- heat and flow velocity encode “pressure” toward each decision
 
 ![Trolley Problem v2](../trolley_v2_example.png)
 
 ---
 
-### 3.3 Semantic vs Attention vs Action – Three-Pane View (v2)
+### 3️⃣ Three-Pane View – Semantic / Attention / Action
 
-A three-pane comparative visualization of:
+A three-pane comparative view of the same decision:
 
-- **Semantic View** – how entities are grouped and related  
-- **Attention View** – how focus is distributed  
-- **Action View** – where interventions can alter the path  
+1. **Semantic View** – entities, roles, and relationships  
+2. **Attention View** – which elements the model attends to  
+3. **Action View** – where interventions can modify the result
 
-![Three-Pane v2](../threepane_semantic_attention_action.png)
-
----
-
-## 4. Use Cases
-
-This framework is intended for:
-
-- **Explainable AI (XAI)** education  
-- visualizing multi-branch reasoning (e.g., dilemmas)  
-- research papers and project pages  
-- teaching semantic / attention / causal structure  
-- prototyping new visualization styles for LLM internals  
-
-It is fully decoupled from any specific language system.  
-SAIIP is acknowledged only as an **origin of inspiration**, not a dependency.
+![Three-Pane Visualization v2](../threepane_semantic_attention_action.png)
 
 ---
 
-## 5. How to Use This Project
+## 🎯 What This Framework Is For
 
-This repository does **not** ship a Python library.  
-Instead, it provides:
+This project is designed for:
 
-- conceptual documentation (README, CN version, addendum)  
-- a set of high-quality diagrams (v2 series)  
-- a coherent interpretability framework you can reuse or extend  
+- **Explainable AI (XAI) education**
+- introducing LLM reasoning to non-experts
+- visualizing multi-branch decisions (e.g., dilemmas, counterfactuals)
+- embedding diagrams into:
+  - papers
+  - slides
+  - courses
+  - technical blog posts
+- inspiring new visualization tools for model interpretation
 
-You may:
-
-- embed the diagrams in slides, papers, or teaching material  
-- adapt the six-layer idea to your own LLM experiments  
-- extend the diagrams with your own decision scenarios  
-- use it as a design reference for new XAI tools  
-
-License: **MIT** – feel free to reuse with attribution.
+You can treat it as a **visual grammar** for explaining “how the model thinks”.
 
 ---
 
-## 6. Credits
+## 🧪 How to Use This Repository
 
-Designed and authored by the project owner.  
-Early inspiration from structured poetic analysis (SAIIP),  
-later generalized into a fully universal, LLM-agnostic visualization framework.
+This repo intentionally does **not** ship a Python package or executable code.  
+It provides:
 
-If you find it useful, a star ⭐ on the GitHub repo is always appreciated.
+- conceptual documentation（EN + ZH）
+- a consistent six-layer interpretability model
+- high-quality diagrams (v2 series) you can reuse
+
+Suggested uses:
+
+- 📘 **Teaching** – use the diagrams in lectures to explain LLM behavior  
+- 🧪 **Research** – adapt the framework to your own experiments  
+- 🎨 **Design** – use the layout as a template for new visualizations  
+- 🧵 **Storytelling** – annotate reasoning paths in complex scenarios
+
+License: **MIT** — you are free to reuse, modify, and extend, with attribution.
+
+---
+
+## 🧱 Extending the Framework
+
+You can extend the Grey-Box idea by:
+
+- adding new layers (e.g., uncertainty bands, temporal windows)
+- mapping it onto real model probes or attention heatmaps
+- using it as a front-end view for interpretability tools
+- treating it as a “visual contract” between humans and models
+
+If you build something on top of this, feel free to link back or open an issue in the repo.
+
+---
+
+## ✨ Credits
+
+Designed and curated by the project owner.  
+Originated from experiments on structured poetic language (SAIIP),  
+and then generalized into a **fully universal, language-agnostic** framework  
+for explaining model behavior in a grey-box manner.
+
+If this project helps you, a ⭐ on the GitHub repo is greatly appreciated.
